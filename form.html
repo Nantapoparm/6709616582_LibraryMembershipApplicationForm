@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h1>ลงทะเบียนสมัครสมาชิก</h1>
+    <form>
+        <div class="zone1">
+            <label for="gender">Gender:</label>
+            <select name="province" id="province">
+                <option value="bangkok">-</option>
+                <option value="bangkok">ชาย</option>
+                <option value="khonkaen">หญิง</option>
+                <option value="bangkok">ไม่ต้องการระบุ</option><br>
+              </select>
+        </div>
+
+    <div class="nameandsur">
+        <label for="name">ชื่อ:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="surname">นามสกุล:</label>
+        <input type="text" id="surname" name="surname"><br><br>
+    </div>
+    
+   
+    
+   
+    <label for="number">รหัสนักศึกษา:</label>
+    <input type="text" id="number" name="number"><br><br>
+    <label for="fac">คณะ:</label>
+    <input type="text" id="fac" name="fac"><br><br>
+    <label for="email">ที่อยู่อีเมล:</label>
+    <input type="text" id="bd" name="bd" required><br><br>
+
+    <label for="date">Select a Date:</label>
+    <input type="date" id="date" name="date"> <br><br>
+
+    <label for="book">ประเภทของหนังสือที่สนใจ:</label>
+    <input type="text" id="book" name="book"><br><br>
+
+    <div class="inf">
+    <label for="information">ความต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่:</label><br>
+    <input type="radio" id="yes" name="information" value="yes">
+    <label for="yes">yes</label><br>
+    <input type="radio" id="no" name="information" value="no">
+    <label for="no">no</label><br><br>
+    </div>  
+
+    <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>
