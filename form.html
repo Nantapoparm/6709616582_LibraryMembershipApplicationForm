@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
-    <h1>ลงทะเบียนสมัครสมาชิก</h1>
+    <h1>ลงทะเบียนสมัครสมาชิกห้องสมุด</h1>
     <form>
         <div class="zone1">
             <label for="gender">Gender:</label>
@@ -19,23 +19,45 @@
             </select>
             <br><br>
             <label for="number">รหัสนักศึกษา:</label>
-            <input type="text" id="number" name="number" required><br><br>
+            <input type="text" id="number" name="number" required placeholder="กรุณากรอกรหัสนักศึกษา" minlength="10"><br><br>
         </div>
 
     <div class="zone2">
         <label for="name">ชื่อ:</label>
-        <input type="text" id="name" name="name" required><br><br>
+        <input type="text" id="name" name="name" required placeholder="ไม่ต้องมีคำนำหน้า"><br><br>
         <label for="surname">นามสกุล:</label>
         <input type="text" id="surname" name="surname" required><br><br>
     </div>
     
    <div class="zone3">
     <label for="fac">คณะ:</label>
-    <input type="text" id="fac" name="fac" required><br><br>
+    <select name="fac" id="fac">
+    <option value="-">-</option>
+    <option value="คณะนิติศาสตร์">คณะนิติศาสตร์</option>
+    <option value="คณะพาณิชยศาสตร์และการบัญชี">คณะพาณิชยศาสตร์และการบัญชี</option>
+    <option value="คณะรัฐศาสตร์">คณะรัฐศาสตร์</option>
+    <option value="คณะเศรษฐศาสตร์">คณะเศรษฐศาสตร์</option>
+    <option value="คณะสังคมสงเคราะห์ศาสตร์">คณะสังคมสงเคราะห์ศาสตร์</option>
+    <option value="คณะสังคมวิทยาและมานุษยวิทยา">คณะสังคมวิทยาและมานุษยวิทยา</option>
+    <option value="คณะศิลปศาสตร์">คณะศิลปศาสตร์</option>
+    <option value="คณะวารสารศาสตร์และสื่อสารมวลชน">คณะวารสารศาสตร์และสื่อสารมวลชน</option>
+    <option value="คณะวิทยาศาสตร์และเทคโนโลยี">คณะวิทยาศาสตร์และเทคโนโลยี</option>
+    <option value="คณะวิศวกรรมศาสตร์">คณะวิศวกรรมศาสตร์</option>
+    <option value="คณะสถาปัตยกรรมศาสตร์และการผังเมือง">คณะสถาปัตยกรรมศาสตร์และการผังเมือง</option>
+    <option value="คณะวิทยาการเรียนรู้และศึกษาศาสตร์">คณะวิทยาการเรียนรู้และศึกษาศาสตร์</option>
+    <option value="คณะศิลปกรรมศาสตร์">คณะศิลปกรรมศาสตร์</option>
+    <option value="คณะแพทยศาสตร์">คณะแพทยศาสตร์</option>
+    <option value="คณะสหเวชศาสตร์">คณะสหเวชศาสตร์</option>
+    <option value="คณะทันตแพทยศาสตร์">คณะทันตแพทยศาสตร์</option>
+    <option value="คณะพยาบาลศาสตร์">คณะพยาบาลศาสตร์</option>
+    <option value="คณะสาธารณสุขศาสตร์">คณะสาธารณสุขศาสตร์</option>
+    <option value="คณะเภสัชศาสตร์">คณะเภสัชศาสตร์</option>
+    </select>
+    <br><br>
     <label for="email">ที่อยู่อีเมล:</label>
-    <input type="text" id="bd" name="bd" required><br><br>
+    <input type="email" id="bd" name="bd" required><br><br>
 
-    <label for="date">Select a Date:</label>
+    <label for="date">วัน เดือน ปีเกิด:</label>
     <input type="date" id="date" name="date"> <br><br>
    </div>
     
@@ -47,6 +69,8 @@
      <label><input type="checkbox" name="book" value="book">สารคดี (Non-Fiction)</label><br>
      <label><input type="checkbox" name="book" value="book">การเงินและธุรกิจ (Business & Finance)</label><br>
      <label><input type="checkbox" name="book" value="book">สุขภาพและการดูแลตนเอง (Health & Wellness)</label><br>
+     <label><input type="checkbox" name="book" value="book">ศิลปะและการออกแบบ (Art & Design)</label><br>
+     <label><input type="checkbox" name="book" value="book">ปรัชญาและจิตวิญญาณ (Philosophy & Spirituality))</label><br>
      <label><input type="checkbox" name="book" value="book">อื่นๆ</label><br><br>
 
     <label for="information">ความต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่:</label><br>
