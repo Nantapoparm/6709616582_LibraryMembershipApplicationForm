@@ -9,28 +9,28 @@
 <body>
     <h1>ลงทะเบียนสมัครสมาชิกห้องสมุด</h1>
     <form>
+        <div class="zone2">
+            <label for="name" class="title">ชื่อ:</label><br>
+            <input type="text" id="name" name="name" required placeholder="ไม่ต้องมีคำนำหน้า"><br><br>
+            <label for="surname" class="title">นามสกุล:</label><br>
+            <input type="text" id="surname" name="surname" required><br><br>
+        </div>
         <div class="zone1">
-            <label for="gender">Gender:</label>
-            <select name="gender" id="gender">
+            <label for="gender" class="title">เพศ:</label><br>
+            <select name="gender" id="gender" >
                 <option value="-">-</option>
                 <option value="male">ชาย</option>
                 <option value="female">หญิง</option>
                 <option value="don't identify">ไม่ต้องการระบุ</option>
             </select>
             <br><br>
-            <label for="number">รหัสนักศึกษา:</label>
+            <label for="number" class="title">รหัสนักศึกษา:</label><br>
             <input type="text" id="number" name="number" required placeholder="กรุณากรอกรหัสนักศึกษา" minlength="10"><br><br>
         </div>
 
-    <div class="zone2">
-        <label for="name">ชื่อ:</label>
-        <input type="text" id="name" name="name" required placeholder="ไม่ต้องมีคำนำหน้า"><br><br>
-        <label for="surname">นามสกุล:</label>
-        <input type="text" id="surname" name="surname" required><br><br>
-    </div>
     
    <div class="zone3">
-    <label for="fac">คณะ:</label>
+    <label for="fac" class="title">คณะ:</label><br>
     <select name="fac" id="fac">
     <option value="-">-</option>
     <option value="คณะนิติศาสตร์">คณะนิติศาสตร์</option>
@@ -54,33 +54,35 @@
     <option value="คณะเภสัชศาสตร์">คณะเภสัชศาสตร์</option>
     </select>
     <br><br>
-    <label for="email">ที่อยู่อีเมล:</label>
+    <label for="email" class="title">ที่อยู่อีเมล:</label><br>
     <input type="email" id="bd" name="bd" required><br><br>
 
-    <label for="date">วัน เดือน ปีเกิด:</label>
+    <label for="date" class="title">วัน เดือน ปีเกิด:</label><br>
     <input type="date" id="date" name="date"> <br><br>
    </div>
     
 
     <div class="zone4">
-     <label for="book">ประเภทของหนังสือที่สนใจ:</label><br>
-     <label><input type="checkbox" name="Literature" value="book">วรรณกรรม (Literature)</label><br>
-     <label><input type="checkbox" name="Fiction" value="book">นิยาย (Fiction)</label><br>
-     <label><input type="checkbox" name="Non-Fiction" value="book">สารคดี (Non-Fiction)</label><br>
-     <label><input type="checkbox" name="Business & Finance" value="book">การเงินและธุรกิจ (Business & Finance)</label><br>
-     <label><input type="checkbox" name="Health & Wellness" value="book">สุขภาพและการดูแลตนเอง (Health & Wellness)</label><br>
-     <label><input type="checkbox" name="Art & Design" value="book">ศิลปะและการออกแบบ (Art & Design)</label><br>
-     <label><input type="checkbox" name="Philosophy & Spirituality" value="book">ปรัชญาและจิตวิญญาณ (Philosophy & Spirituality)</label><br>
-     <label><input type="checkbox" name="other" value="book">อื่นๆ</label><br><br>
+     <br><label for="book" class="title">ประเภทของหนังสือที่สนใจ:</label><br>
+     <label><input type="checkbox" name="Literature" value="book">วรรณกรรม (Literature)</label><br><br>
+     <label><input type="checkbox" name="Fiction" value="book">นิยาย (Fiction)</label><br><br>
+     <label><input type="checkbox" name="Non-Fiction" value="book">สารคดี (Non-Fiction)</label><br><br>
+     <label><input type="checkbox" name="Business & Finance" value="book">การเงินและธุรกิจ (Business & Finance)</label><br><br>
+     <label><input type="checkbox" name="Health & Wellness" value="book">สุขภาพและการดูแลตนเอง (Health & Wellness)</label><br><br>
+     <label><input type="checkbox" name="Art & Design" value="book">ศิลปะและการออกแบบ (Art & Design)</label><br><br>
+     <label><input type="checkbox" name="Philosophy & Spirituality" value="book">ปรัชญาและจิตวิญญาณ (Philosophy & Spirituality)</label><br><br>
+     <label><input type="checkbox" name="other" value="book">อื่นๆ</label>
+     <input type="text" id="book" name="font" placeholder="กรุณากรอกประเภท"><br><br><br>
 
-    <label for="information">ความต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่:</label><br>
+    <label for="information" class="title">ความต้องการรับข่าวสารข้อมูลของห้องสมุดทางอีเมลหรือไม่:</label><br>
     <input type="radio" id="yes" name="information" value="yes">
-    <label for="yes">yes</label><br>
+    <label for="yes">yes</label> &nbsp
     <input type="radio" id="no" name="information" value="no">
     <label for="no">no</label><br><br>
     </div>  
-
+<div class="zone5">
     <input type="submit" value="Submit">
+</div>
     </form>
     
 </body>
